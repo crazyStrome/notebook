@@ -1,5 +1,30 @@
-[TOC]
+<!-- TOC -->
 
+- [基本数据结构](#基本数据结构)
+    - [slice](#slice)
+        - [slice的扩容](#slice的扩容)
+        - [make和new](#make和new)
+        - [slice和unsafe.Pointer相互转换](#slice和unsafepointer相互转换)
+    - [map的实现](#map的实现)
+        - [数据结构](#数据结构)
+        - [增量扩容](#增量扩容)
+        - [查找过程](#查找过程)
+        - [插入过程分析](#插入过程分析)
+    - [nil的语义](#nil的语义)
+        - [interface](#interface)
+        - [string和slice](#string和slice)
+        - [channel和map](#channel和map)
+- [函数调用协议](#函数调用协议)
+    - [go关键字](#go关键字)
+    - [defer关键字](#defer关键字)
+        - [defer的实现](#defer的实现)
+    - [连续栈](#连续栈)
+        - [基本原理](#基本原理)
+        - [实现过程](#实现过程)
+        - [具体细节](#具体细节)
+            - [如何捕获栈的空间不足](#如何捕获栈的空间不足)
+
+<!-- /TOC -->
 #  基本数据结构
 
 ##  slice

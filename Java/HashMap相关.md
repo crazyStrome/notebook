@@ -1,5 +1,17 @@
-[TOC]
+<!-- TOC -->
 
+- [HashMap相关面试问题](#hashmap相关面试问题)
+    - [你知道HashMap的工作原理吗？你知道HashMap的get()方法的工作原理吗？](#你知道hashmap的工作原理吗你知道hashmap的get方法的工作原理吗)
+    - [当两个对象的hashcode相同会发生什么？](#当两个对象的hashcode相同会发生什么)
+    - [如果两个键的hashcode相同，你如何获取值对象？](#如果两个键的hashcode相同你如何获取值对象)
+    - [如果HashMap的大小超过了负载因子(load factor)定义的容量，怎么办？](#如果hashmap的大小超过了负载因子load-factor定义的容量怎么办)
+    - [你了解重新调整HashMap大小存在什么问题吗？](#你了解重新调整hashmap大小存在什么问题吗)
+    - [你说HashMap的get迭代了一个链表，那怎么保证HashMap的时间复杂度O(1)?链表的查找的时间复杂度又是多少？](#你说hashmap的get迭代了一个链表那怎么保证hashmap的时间复杂度o1链表的查找的时间复杂度又是多少)
+    - [put时，是加到链表头还是链表尾](#put时是加到链表头还是链表尾)
+    - [传统 HashMap 的缺点](#传统-hashmap-的缺点)
+    - [HashMap Hashtable LinkedHashMap 和TreeMap](#hashmap-hashtable-linkedhashmap-和treemap)
+
+<!-- /TOC -->
 #  HashMap相关面试问题
 
 ##  你知道HashMap的工作原理吗？你知道HashMap的get()方法的工作原理吗？
